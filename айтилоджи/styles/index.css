@@ -1,0 +1,190 @@
+/* --- Контейнер и Шапка --- */
+.container {
+    overflow: hidden;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    border-radius: 18px;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(10px);
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    padding: 14px 18px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 6;
+    box-sizing: border-box;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.header-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #FFCC00;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    color: #111;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+    text-decoration: none;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+}
+
+.header-link {
+    font-size: 14px;
+    color: #111111;
+    text-decoration: none;
+}
+
+/* --- Основной контент --- */
+.main {
+    padding: 120px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.main-info {
+    max-width: 840px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-title {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 140px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #111111;
+    text-align: center;
+}
+
+.main-title span {
+    color: #ffcc00;
+}
+
+.main-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.main-feature {
+    background: #111111;
+    color: #ffffff;
+    padding: 12px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    border-radius: 10px;
+}
+
+.main-description {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #111111;
+    margin-bottom: 40px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.main-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+/* --- Кнопки --- */
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform 0.08s ease, opacity 0.12s ease;
+    background: #ffcc00;
+    color: #111111;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 433px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+
+.button:hover {
+    background-color: #E5BC19;
+}
+
+.button.button-white {
+    background: #ffffff;
+    border: 1px solid #111111;
+}
+
+.button.button-white:hover {
+    background: #f1f1f1;
+}
+
+/* --- Картинка --- */
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.main-title-ghost {
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    bottom: -150px;
+    font-weight: 500;
+    font-size: 278px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: rgba(236, 237, 240, 0.3);
+    pointer-events: none;
+}
